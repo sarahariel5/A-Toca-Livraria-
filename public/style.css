@@ -1,0 +1,360 @@
+body {
+  font-family: 'Lora', serif;
+  margin: 0;
+  background-color:#F9F9F6;
+}
+
+header {
+  background-color: #F9F9F6; /* Fundo branco gelo */
+  padding: 10px 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #ccc;
+}
+
+header img {
+  height: 50px;
+}
+
+header nav a {
+  color: #2F564D; /* Verde escuro */
+  margin-left: 15px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+header nav a:hover {
+  text-decoration: underline;
+}
+
+footer {
+  background-color: #FBDE86;
+  color: #2F564D;
+  text-align: center;
+  padding: 15px 0;
+  margin-top: 40px;
+  border-top: 1px solid #ccc;
+  font-size: 18px;
+}
+
+nav a {
+  color: #2F564D;
+  margin: 0 10px;
+  font-weight: bold;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+h1, h2, h3 {
+  color: #2F564D;
+  font-family: 'Lora', serif;
+  font-size: 30px;
+  text-align: center;  
+}
+
+button {
+  background-color: #FBDE86;
+  color: #F9F9F6;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 15px;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+button:hover {
+  background-color: #E4B151;
+}
+
+main {
+  padding: 15px;
+  text-align: justify;
+}
+
+
+a.button-link {
+  display: inline-block;
+  background-color: #468577;
+  color: #F9F9F6;
+  padding: 10px 15px;
+  border-radius: 5px;
+  text-decoration: none;
+  margin-top: 15px;
+}
+
+a.button-link:hover {
+  background-color: #2F564D;
+}
+
+.header-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+header img {
+  height: 50px;
+}
+
+.titulo-header {
+  font-size: 28px;
+  font-weight: bold;
+  color: #2F564D;
+}
+.container-livros {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.card-livros {
+  background-color: #fff;
+  border: 2px solid #2A3E3F;
+  border-radius: 8px;
+  width: 250px;
+  padding: 15px;
+  box-shadow: 2px 2px 8px rgba(0,0,0,0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.card-livros img {
+  max-height: 150px;
+  border-radius: 4px;
+  margin-bottom: 10px;
+}
+
+.card-livros h3 {
+  color: #2F564D;
+  font-size: 20px;
+  margin: 10px 0 5px 0;
+}
+
+.card-livros p {
+  color: #2F564D;
+  font-size: 14px;
+  text-align: center;
+}
+
+.acoes-livros {
+  margin-top: 10px;
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}
+
+.button-livros {
+  background-color: #2A3E3F;
+  color: #FCE9D8;
+  border: none;
+  border-radius: 6px;
+  padding: 8px 12px;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 14px;
+  font-family: 'Lora', serif;
+}
+
+.button-livros:hover {
+  background-color: #3C2615;
+}
+
+.no-image-livros {
+  width: 100%;
+  height: 150px;
+  background-color: #EAD2C1;
+  color: #3C2615;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px;
+  font-style: italic;
+}
+
+.form-livros {
+  display: flex;
+  flex-direction: column;
+  max-width: 500px;
+  margin: 20px auto;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  border: 2px solid #2F564D;
+  box-shadow: 2px 2px 8px rgba(157, 156, 156, 0.1);
+}
+
+.form-livros label {
+  margin-top: 10px;
+  margin-bottom: 5px;
+  color: #2F564D;
+  font-weight: bold;
+}
+
+.input-livros {
+  padding: 8px;
+  border-radius: 4px;
+  border: 1px solid #2F564D;
+}
+
+.input-livros:focus {
+  outline: none;
+  border-color: #213D36;
+}
+
+.button-livros {
+  margin-top: 15px;
+  padding: 10px;
+  background-color: #2F564D;
+  color: #F9F9F6;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.button-livros:hover {
+  background-color: #213D36;
+}
+
+.container-livros {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  margin-top: 20px;
+  flex-wrap: wrap;
+}
+
+.card-livros {
+  background-color: #fff;
+  border: 2px solid #2F564D; /* Verde escuro */
+  border-radius: 8px;
+  width: 200px;
+  padding: 15px;
+  box-shadow: 2px 2px 8px rgba(0,0,0,0.1);
+  text-align: center;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card-livros img {
+  max-height: 150px;
+  border-radius: 4px;
+  margin-bottom: 10px;
+}
+
+.card-livros h3 {
+  color: #2F564D; /* Verde escuro para título */
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+
+.card-livros p {
+  color: #3C2615; /* Marrom escuro para autor */
+  font-size: 16px;
+}
+
+.card-livros:hover {
+  transform: translateY(-5px);
+  box-shadow: 4px 4px 12px rgba(0,0,0,0.2);
+}
+.home-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 60px 30px;
+  background-color: #F9F9F6;
+}
+
+.home-texto {
+  flex: 1;
+  padding-right: 30px;
+}
+
+.home-texto h2 {
+  color: #2F564D;
+  font-size: 50px;
+  margin-bottom: 100px;
+}
+
+.home-texto p {
+  color: #3C2615;
+  font-size: 19px;
+  line-height: 1.6;
+}
+
+.button-link {
+  background-color: #E4B151;
+  color: #000;
+  padding: 10px 20px;
+  border-radius: 4px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 18px;
+  display: block;            /* Alterado de inline-block para block */
+  margin: 20px auto;          /* Isso centraliza horizontalmente */
+  text-align: center;
+}
+
+.button-link:hover {
+  background-color: #FBDE86;
+}
+
+.home-imagem img {
+  max-width: 450px;
+  border-radius: 10px;
+}
+
+.favoritos-container {
+  padding: 40px 30px;
+  background-color: #F9F9F6;
+}
+
+.favoritos-container h2 {
+  color: #2F564D;
+  font-size: 28px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.favoritos-grid {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.card-favorito {
+  background-color: #fff;
+  border: 2px solid #2F564D;
+  border-radius: 8px;
+  padding: 15px;
+  width: 200px;
+  text-align: center;
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card-favorito img {
+  max-height: 150px;
+  border-radius: 4px;
+  margin-bottom: 10px;
+}
+
+.card-favorito h3 {
+  color: #2F564D;
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+
+.card-favorito p {
+  color: #3C2615;
+  font-size: 17px;
+}
+
+
