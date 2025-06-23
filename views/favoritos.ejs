@@ -1,0 +1,26 @@
+<%- include('partials/header') %>
+
+<div class="favoritos-container">
+  <h2>Seus Livros Favoritos</h2>
+
+  <% if (livros.length > 0) { %>
+    <div class="favoritos-grid">
+      <% livros.forEach(livro => { %>
+        <div class="card-favorito">
+          <% if (livro.imagem) { %>
+            <img src="/imagens/<%= livro.imagem %>" alt="Imagem do livro">
+          <% } else { %>
+            <div class="no-image-favorito">Sem imagem</div>
+          <% } %>
+
+          <h3><%= livro.titulo %></h3>
+          <p><strong>Autor:</strong> <%= livro.autor %></p>
+        </div>
+      <% }) %>
+    </div>
+  <% } else { %>
+    <p>Você ainda não tem livros favoritos.</p>
+  <% } %>
+</div>
+
+<%- include('partials/footer') %>

@@ -1,0 +1,35 @@
+<%- include('partials/header') %>
+
+<h2>Lista de Livros</h2>
+
+<div class="container-livros">
+  <% if (livros.length > 0) { %>
+    <% livros.forEach(livro => { %>
+      <div class="card-livros">
+        <% if (livro.imagem) { %>
+          <img src="/imagens/<%= livro.imagem %>" alt="Imagem do livro">
+        <% } else { %>
+          <div class="no-image-livros">Sem imagem</div>
+        <% } %>
+
+        <h3><%= livro.titulo %></h3>
+        <p><strong>Autor:</strong> <%= livro.autor %></p>
+        <p><strong>Descrição:</strong> <%= livro.descricao %></p>
+
+        <div class="acoes-livros">
+          <a href="/livros/editar/<%= livro.id %>" class="button-livros">Editar</a>
+          <form action="/livros/deletar/<%= livro.id %>" method="POST" style="display:inline;">
+            <button type="submit" class="button-livros">Excluir</button>
+          </form>
+          <form action="/favoritos/adicionar/<%= livro.id %>" method="POST" style="display:inline;">
+            <button type="submit" class="button-livros">Favoritar</button>
+          </form>
+        </div>
+      </div>
+    <% }) %>
+  <% } else { %>
+    <p>Nenhum livro cadastrado.</p>
+  <% } %>
+</div>
+
+<%- include('partials/footer') %>

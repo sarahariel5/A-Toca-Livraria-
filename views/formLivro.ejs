@@ -1,0 +1,26 @@
+<%- include('partials/header') %>
+
+<h2><%= livro.id ? 'Editar Livro' : 'Cadastrar Novo Livro' %></h2>
+
+<form action="<%= acao %>" method="POST" enctype="multipart/form-data" class="form-livros">
+  <label for="titulo">Título:</label>
+  <input type="text" id="titulo" name="titulo" value="<%= livro.titulo || '' %>" required class="input-livros">
+
+  <label for="autor">Autor:</label>
+  <input type="text" id="autor" name="autor" value="<%= livro.autor || '' %>" required class="input-livros">
+
+  <label for="descricao">Descrição:</label>
+  <textarea id="descricao" name="descricao" class="input-livros"><%= livro.descricao || '' %></textarea>
+
+  <% if (livro.imagem) { %>
+    <p>Imagem atual: <img src="/imagens/<%= livro.imagem %>" width="100"></p>
+    <input type="hidden" name="imagem_antiga" value="<%= livro.imagem %>">
+  <% } %>
+
+  <label for="imagem">Imagem do Livro:</label>
+  <input type="file" id="imagem" name="imagem" class="input-livros">
+
+  <button type="submit" class="button-livros">Salvar</button>
+</form>
+
+<%- include('partials/footer') %>
